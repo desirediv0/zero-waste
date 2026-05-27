@@ -29,6 +29,7 @@ const team = [
 
 const timeline = [
     { year: "2026", title: "Founded in Gurgaon", desc: "ZeroWaste Asia launched in Gurgaon with a single mission: make recycling easy, fair, and accessible to every Indian household." },
+    { year: "2026", title: "Scaled to 3 Cities", desc: "Reached 1,000+ households across Gurgaon, Delhi and Noida with 200+ verified collectors." },
     { year: "2026", title: "₹85 Lakh+ Paid to Users", desc: "Crossed a landmark — over ₹85 lakh paid back to households for their recyclables. 500K kg CO₂ offset." },
     { year: "2026", title: "5,000+ Households", desc: "Serving 5,000+ homes across Delhi NCR with verified collectors and certified recycling partners." },
 ];
