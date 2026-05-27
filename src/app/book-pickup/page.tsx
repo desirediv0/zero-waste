@@ -14,13 +14,6 @@ const CATEGORIES: Category[] = [
     { id: "others", label: "Others", emoji: "♻️" },
 ];
 
-const TIME_SLOTS = [
-    "8:00 AM – 10:00 AM",
-    "10:00 AM – 12:00 PM",
-    "12:00 PM – 2:00 PM",
-    "2:00 PM – 4:00 PM",
-    "4:00 PM – 6:00 PM",
-];
 
 const WEIGHTS = [
     "Less than 5 kg",
@@ -59,9 +52,7 @@ export default function BookPickupPage() {
     const [address, setAddress] = useState("");
     const [pincode, setPincode] = useState("");
     const [city, setCity] = useState("");
-    const [vehicle, setVehicle] = useState<"small" | "large" | "">("");
     const [date, setDate] = useState("");
-    const [timeSlot, setTimeSlot] = useState("");
     const [weight, setWeight] = useState("");
     const [categories, setCategories] = useState<string[]>([]);
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -78,9 +69,7 @@ export default function BookPickupPage() {
         name.trim() &&
         address.trim() &&
         city.trim() &&
-        vehicle &&
         date &&
-        timeSlot &&
         weight &&
         categories.length > 0;
 
@@ -91,8 +80,7 @@ export default function BookPickupPage() {
 
         const payload = {
             name, phone, email, city, address, pincode,
-            vehicle: vehicle === "small" ? "Small – Our Rider" : "Large – Our Mini Truck",
-            date, timeSlot, weight,
+            date, weight,
             categories: categories
                 .map((id) => CATEGORIES.find((c) => c.id === id)?.label ?? id)
                 .join(", "),
@@ -121,7 +109,7 @@ export default function BookPickupPage() {
                         Thank you, <strong>{name}</strong>! Your pickup has been scheduled for
                     </p>
                     <div className="bg-green-50 border border-green-200 rounded-2xl px-5 py-4 mb-6">
-                        <p className="font-black text-green-800 text-base">{date} · {timeSlot}</p>
+                        <p className="font-black text-green-800 text-base">{date}</p>
                         <p className="text-green-700 text-sm mt-1">{address}, {city}</p>
                     </div>
                     <p className="text-gray-400 text-xs mb-6">
@@ -203,37 +191,8 @@ export default function BookPickupPage() {
                         </div>
                     </StepCard>
 
-                    {/* ── Vehicle Type ── */}
-                    <StepCard number={2} icon="🚛" title="Vehicle Type">
-                        <div className="grid grid-cols-2 gap-3">
-                            {[
-                                { id: "small", emoji: "🛵", title: "Small", sub: "Our Rider" },
-                                { id: "large", emoji: "🚛", title: "Large", sub: "Our Mini Truck" },
-                            ].map((v) => (
-                                <button
-                                    key={v.id}
-                                    type="button"
-                                    onClick={() => setVehicle(v.id as "small" | "large")}
-                                    className={`flex items-center gap-3 sm:gap-4 p-4 rounded-xl border-2 transition-all text-left ${vehicle === v.id
-                                            ? "border-gray-900 bg-gray-50 shadow-sm"
-                                            : "border-gray-200 bg-white hover:border-gray-300"
-                                        }`}
-                                >
-                                    <span className="text-3xl sm:text-4xl shrink-0">{v.emoji}</span>
-                                    <div>
-                                        <p className="font-black text-gray-900 text-sm sm:text-base">{v.title}</p>
-                                        <p className="text-gray-400 text-xs">{v.sub}</p>
-                                    </div>
-                                    {vehicle === v.id && (
-                                        <span className="ml-auto w-5 h-5 bg-gray-900 rounded-full flex items-center justify-center text-white text-[10px] shrink-0">✓</span>
-                                    )}
-                                </button>
-                            ))}
-                        </div>
-                    </StepCard>
-
                     {/* ── Pickup Address ── */}
-                    <StepCard number={3} icon="📍" title="Pickup Address">
+                    <StepCard number={2} icon="📍" title="Pickup Address">
                         <div className="space-y-3">
                             <div>
                                 <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1.5">Full Address *</label>
@@ -265,7 +224,7 @@ export default function BookPickupPage() {
                     </StepCard>
 
                     {/* ── Pickup Date ── */}
-                    <StepCard number={4} icon="📅" title="Pickup Date">
+                    <StepCard number={3} icon="📅" title="Pickup Date">
                         <input
                             type="date"
                             value={date}
@@ -276,27 +235,8 @@ export default function BookPickupPage() {
                         />
                     </StepCard>
 
-                    {/* ── Time Slot ── */}
-                    <StepCard number={5} icon="🕐" title="Time Slot">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {TIME_SLOTS.map((slot) => (
-                                <button
-                                    key={slot}
-                                    type="button"
-                                    onClick={() => setTimeSlot(slot)}
-                                    className={`px-4 py-3 text-sm font-bold rounded-xl border-2 text-left transition-all ${timeSlot === slot
-                                            ? "border-gray-900 bg-gray-50 text-gray-900"
-                                            : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"
-                                        }`}
-                                >
-                                    <span className="text-base mr-2">🕐</span>{slot}
-                                </button>
-                            ))}
-                        </div>
-                    </StepCard>
-
                     {/* ── Expected Weight ── */}
-                    <StepCard number={6} icon="⚖️" title="Expected Weight">
+                    <StepCard number={4} icon="⚖️" title="Expected Weight">
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                             {WEIGHTS.map((w) => (
                                 <button
@@ -315,7 +255,7 @@ export default function BookPickupPage() {
                     </StepCard>
 
                     {/* ── Categories ── */}
-                    <StepCard number={7} icon="🗂️" title="Categories">
+                    <StepCard number={5} icon="🗂️" title="Categories">
                         <p className="text-xs text-gray-400 font-medium mb-3">Select all that apply</p>
                         <div className="flex flex-wrap gap-2">
                             {CATEGORIES.map((cat) => {

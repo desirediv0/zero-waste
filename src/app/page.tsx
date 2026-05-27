@@ -1,18 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const stats = [
-  { value: "50,000+", label: "Happy Households", emoji: "🏠" },
+  { value: "5,000+", label: "Happy Households", emoji: "🏠" },
   { value: "1M+ Kg", label: "Waste Recycled", emoji: "♻️" },
-  { value: "₹10 Cr+", label: "Paid to Users", emoji: "💰" },
+  { value: "₹85 Lakh+", label: "Paid to Users", emoji: "💰" },
   { value: "500K Kg", label: "CO₂ Offset", emoji: "🌿" },
 ];
 
-const mediaLogos = [
-  "Indian EXPRESS", "YourStory", "Times Now",
-  "CNN News18", "TED Talks", "Economic Times",
-];
 
 const reviews = [
   { name: "Pooja", text: "Pickup was on time and staff behaved politely. Price was exactly as shown — no hidden charges. Smooth and convenient." },
@@ -22,8 +19,58 @@ const reviews = [
 ];
 
 export default function HomePage() {
+  const [showDialog, setShowDialog] = useState(false);
+
+  useEffect(() => {
+    setShowDialog(true);
+  }, []);
+
   return (
     <div className="bg-white overflow-x-hidden">
+
+      {/* ══════════ WELCOME DIALOG ══════════ */}
+      {showDialog && (
+        <div className="fixed inset-0 z-[999] flex items-center justify-center px-4"
+          style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(6px)" }}>
+          <div className="bg-white rounded-3xl shadow-2xl w-full max-w-sm p-8 text-center relative">
+            {/* Logo / icon */}
+            <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-5">
+              ♻️
+            </div>
+            <h2 className="text-2xl font-black text-gray-900 mb-1">Welcome to ZeroWaste Asia</h2>
+            <p className="text-gray-500 text-sm mb-7">What would you like to do today?</p>
+
+            <div className="flex flex-col gap-3">
+              {/* Buy */}
+              <Link
+                href="/furniture"
+                onClick={() => setShowDialog(false)}
+                className="flex items-center gap-4 px-5 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all group"
+              >
+                <span className="text-2xl">🛋️</span>
+                <div className="text-left">
+                  <p className="font-black text-base leading-tight">Buy</p>
+                  <p className="text-gray-400 text-xs font-medium">Refurbished Furniture</p>
+                </div>
+                <span className="ml-auto text-gray-500 group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+
+              {/* Sell */}
+              <button
+                onClick={() => setShowDialog(false)}
+                className="flex items-center gap-4 px-5 py-4 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-all group"
+              >
+                <span className="text-2xl">💰</span>
+                <div className="text-left">
+                  <p className="font-black text-base leading-tight">Sell</p>
+                  <p className="text-green-200 text-xs font-medium">Your Scrap</p>
+                </div>
+                <span className="ml-auto text-green-300 group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ══════════ HERO ══════════ */}
       <section className="relative min-h-[100svh] flex flex-col items-center justify-center pt-20 pb-10 overflow-hidden px-4">
@@ -43,7 +90,7 @@ export default function HomePage() {
         {/* Badge */}
         <div className="relative z-10 inline-flex items-center gap-2 bg-green-100 text-green-800 text-[11px] sm:text-xs font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-6 border border-green-200">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse shrink-0" />
-          Trusted by 50,000+ households across India
+          Trusted by 5,000+ households across Delhi NCR
         </div>
 
         {/* Headline */}
@@ -122,19 +169,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ══════════ MEDIA ══════════ */}
-      <section className="py-10 sm:py-14 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-5xl mx-auto px-4">
-          <p className="text-[10px] sm:text-xs font-bold text-gray-400 text-center uppercase tracking-widest mb-6">As seen in</p>
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-            {mediaLogos.map((logo) => (
-              <div key={logo} className="border border-gray-200 rounded-xl px-3 py-2 sm:px-5 sm:py-3 text-xs sm:text-sm font-bold text-gray-500 bg-white hover:border-green-300 hover:text-green-700 transition-all cursor-default">
-                {logo}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ══════════ 3 STEPS ══════════ */}
 
       {/* ══════════ 3 STEPS ══════════ */}
       <section className="py-14 sm:py-16 bg-white">

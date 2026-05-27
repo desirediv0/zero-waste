@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-    { value: "50,000+", label: "Happy Households", emoji: "🏠" },
+    { value: "5,000+", label: "Happy Households", emoji: "🏠" },
     { value: "1M+ Kg", label: "Waste Recycled", emoji: "♻️" },
-    { value: "₹10 Cr+", label: "Paid to Users", emoji: "💰" },
+    { value: "₹85 Lakh+", label: "Paid to Users", emoji: "💰" },
     { value: "500K Kg", label: "CO₂ Offset", emoji: "🌿" },
     { value: "2,500+", label: "Collector Families", emoji: "👷" },
     { value: "3+ Years", label: "Of Operations", emoji: "🗓️" },
@@ -23,17 +23,14 @@ const values = [
 ];
 
 const team = [
-    { name: "Raj Mehta", role: "Co-Founder & CEO", emoji: "👨‍💼", color: "bg-green-100" },
-    { name: "Priya Sharma", role: "Head of Operations", emoji: "👩‍💼", color: "bg-teal-100" },
-    { name: "Arjun Das", role: "CTO & Tech Lead", emoji: "👨‍💻", color: "bg-blue-100" },
-    { name: "Meena Patel", role: "Community Manager", emoji: "👩‍🤝‍👩", color: "bg-purple-100" },
+    { name: "Hemendra Choubey", role: "Founder & Director", emoji: "👨‍💼", color: "bg-green-100" },
+    { name: "Ravi Choubey", role: "Head of Operation", emoji: "👨‍💼", color: "bg-teal-100" },
 ];
 
 const timeline = [
-    { year: "2022", title: "Founded in New Delhi", desc: "ZeroWaste Asia launched with a single mission: make recycling easy, fair, and accessible to every Indian household." },
-    { year: "2023", title: "Scaled to 10 Cities", desc: "Reached 10,000+ households across Delhi NCR, Mumbai, Bangalore, and Hyderabad with 500+ verified collectors." },
-    { year: "2024", title: "₹5 Cr Paid to Users", desc: "Crossed a landmark — over ₹5 crore paid back to households for their recyclables. 500K kg CO₂ offset." },
-    { year: "2025", title: "50,000+ Households", desc: "Serving 50,000+ homes across 20+ cities. Partnered with 200+ certified recycling facilities across South Asia." },
+    { year: "2026", title: "Founded in Gurgaon", desc: "ZeroWaste Asia launched in Gurgaon with a single mission: make recycling easy, fair, and accessible to every Indian household." },
+    { year: "2026", title: "₹85 Lakh+ Paid to Users", desc: "Crossed a landmark — over ₹85 lakh paid back to households for their recyclables. 500K kg CO₂ offset." },
+    { year: "2026", title: "5,000+ Households", desc: "Serving 5,000+ homes across Delhi NCR with verified collectors and certified recycling partners." },
 ];
 
 export default function AboutPage() {
@@ -50,7 +47,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-4xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 text-[11px] sm:text-xs font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-6 sm:mb-8 border border-green-200">
                         <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse shrink-0" />
-                        Founded 2022 · New Delhi, India
+                        Founded 2026 · Gurgaon, India
                     </div>
 
                     <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-[0.95] tracking-tight mb-6">
