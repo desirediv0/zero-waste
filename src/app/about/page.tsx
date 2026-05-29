@@ -28,10 +28,9 @@ const team = [
 ];
 
 const timeline = [
-    { year: "2026", title: "Founded in Gurgaon", desc: "ZeroWaste Asia launched in Gurgaon with a single mission: make recycling easy, fair, and accessible to every Indian household." },
-    { year: "2026", title: "Scaled to 3 Cities", desc: "Reached 1,000+ households across Gurgaon, Delhi and Noida with 200+ verified collectors." },
-    { year: "2026", title: "₹85 Lakh+ Paid to Users", desc: "Crossed a landmark — over ₹85 lakh paid back to households for their recyclables. 500K kg CO₂ offset." },
-    { year: "2026", title: "5,000+ Households", desc: "Serving 5,000+ homes across Delhi NCR with verified collectors and certified recycling partners." },
+    { year: "2026", title: "Founded in Gurgaon", desc: "ZeroWaste Asia was founded in Gurgaon with a single mission: make recycling easy, fair, and accessible to every Indian household." },
+    { year: "2026", title: "Scaled to 03 Cities", desc: "Expanding our operations rapidly to cover three major cities in the Delhi NCR region." },
+    { year: "2026", title: "1,000+ Households Reached", desc: "Reached 1,000+ households across Gurgaon, Delhi and Noida with 200+ verified collectors." },
 ];
 
 export default function AboutPage() {
@@ -149,7 +148,7 @@ export default function AboutPage() {
 
                         <div className="space-y-8 sm:space-y-0">
                             {timeline.map((item, i) => (
-                                <div key={item.year} className={`relative flex items-start gap-6 sm:gap-0 ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"} sm:mb-12`}>
+                                <div key={item.title} className={`relative flex items-start gap-6 sm:gap-0 ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"} sm:mb-12`}>
                                     {/* Dot */}
                                     <div className="relative z-10 w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-black text-xs shrink-0 sm:absolute sm:left-1/2 sm:-translate-x-1/2 sm:top-6 shadow-md">
                                         {i + 1}
