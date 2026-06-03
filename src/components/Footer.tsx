@@ -102,15 +102,15 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Phone</p>
-                                    <a href="tel:+918800000000" className="text-sm text-gray-400 hover:text-green-400 font-black transition-colors">
-                                        +91 88000 00000
+                                    <a href="tel:+919172647718" className="text-sm text-gray-400 hover:text-green-400 font-black transition-colors">
+                                        +91 91726 47718
                                     </a>
                                 </li>
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Email</p>
-                                    <a href="mailto:hello@zerowasteindia.com"
+                                    <a href="mailto:zerowaste1302@gmail.com"
                                         className="text-sm text-gray-400 hover:text-green-400 font-medium transition-colors break-all">
-                                        hello@zerowasteindia.com
+                                        zerowaste1302@gmail.com
                                     </a>
                                 </li>
                             </ul>

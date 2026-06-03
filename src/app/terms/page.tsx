@@ -171,7 +171,7 @@ export default function TermsPage() {
                         <div className="bg-white rounded-2xl p-5 border border-gray-100 text-center shadow-sm">
                             <div className="text-3xl mb-2">📧</div>
                             <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Legal Support</p>
-                            <p className="font-black text-gray-900 text-sm">hello@zerowasteindia.com</p>
+                            <p className="font-black text-gray-900 text-sm">zerowaste1302@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export default function TermsPage() {
                         Our support team is available 10AM – 7PM, Mon – Sat.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                        <a href="mailto:hello@zerowasteindia.com"
+                        <a href="mailto:zerowaste1302@gmail.com"
                             className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 sm:px-7 sm:py-4 bg-white hover:bg-green-50 text-gray-900 font-black text-sm rounded-2xl transition-all shadow-xl hover:-translate-y-0.5">
                             📧 Contact Legal Support
                         </a>

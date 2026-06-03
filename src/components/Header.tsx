@@ -177,8 +177,8 @@ export default function Header() {
                             Book Free Pickup
                         </Link>
                         <div className="text-center pb-4">
-                            <p className="text-[10px] text-gray-400 font-medium">📞 +91 88000 00000</p>
-                            <p className="text-[10px] text-gray-400 font-medium mt-0.5">hello@zerowasteindia.com</p>
+                            <p className="text-[10px] text-gray-400 font-medium">📞 +91 91726 47718</p>
+                            <p className="text-[10px] text-gray-400 font-medium mt-0.5">zerowaste1302@gmail.com</p>
                         </div>
                     </div>
                 </div>

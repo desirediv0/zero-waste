@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
         <div style="background:#f9fafb;padding:18px 32px;text-align:center;border-top:1px solid #e5e7eb;">
           <p style="font-size:12px;color:#9ca3af;margin:0;">
             ZeroWaste india · Furniture Division · New Delhi, India<br/>
-            hello@zerowasteindia.com · +91 88000 00000
+            zerowaste1302@gmail.com · +91 91726 47718
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"ZeroWaste india Furniture" <${process.env.FROM_EMAIL}>`,
-      to: process.env.ADMIN_EMAIL || "hello@zerowasteindia.com",
+      to: process.env.ADMIN_EMAIL || "zerowaste1302@gmail.com",
       subject: `🛋️ Furniture Request — ${action} · ${company} (${city})`,
       html: emailHtml,
       replyTo: email,

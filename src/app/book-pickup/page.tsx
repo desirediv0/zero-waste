@@ -133,8 +133,8 @@ export default function BookPickupPage() {
                     <h1 className="text-3xl sm:text-4xl font-black text-gray-900 mb-1">Schedule a Pickup</h1>
                     <p className="text-gray-500 text-sm">
                         Fill in your details below. For queries, call{" "}
-                        <a href="tel:+918800000000" className="text-green-700 font-bold hover:underline">
-                            +91 88000 00000
+                        <a href="tel:+919172647718" className="text-green-700 font-bold hover:underline">
+                            +91 91726 47718
                         </a>
                     </p>
                 </div>
@@ -282,7 +282,7 @@ export default function BookPickupPage() {
                     {/* ── Error ── */}
                     {status === "error" && (
                         <div className="p-4 bg-red-50 border border-red-200 rounded-2xl text-red-700 text-sm text-center font-semibold">
-                            ⚠️ Something went wrong. Please call +91 88000 00000.
+                        ⚠️ Something went wrong. Please call +91 91726 47718.
                         </div>
                     )}
 
