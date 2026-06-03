@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
         <!-- Footer -->
         <div style="background:#f9fafb;padding:18px 32px;text-align:center;border-top:1px solid #e5e7eb;">
           <p style="font-size:12px;color:#9ca3af;margin:0;">
-            ZeroWaste india · New Delhi, India · zerowaste1302@gmail.com · +91 91726 47718
+            ZeroWaste india · New Delhi, India · zerowaste1302@gmail.com · +91 92660 57770
           </p>
         </div>
       </div>

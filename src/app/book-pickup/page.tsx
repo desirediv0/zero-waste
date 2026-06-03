@@ -133,8 +133,8 @@ export default function BookPickupPage() {
                     <h1 className="text-3xl sm:text-4xl font-black text-gray-900 mb-1">Schedule a Pickup</h1>
                     <p className="text-gray-500 text-sm">
                         Fill in your details below. For queries, call{" "}
-                        <a href="tel:+919172647718" className="text-green-700 font-bold hover:underline">
-                            +91 91726 47718
+                        <a href="tel:+919266057770" className="text-green-700 font-bold hover:underline">
+                            +91 92660 57770
                         </a>
                     </p>
                 </div>
@@ -244,8 +244,8 @@ export default function BookPickupPage() {
                                     type="button"
                                     onClick={() => setWeight(w)}
                                     className={`px-4 py-3 text-sm font-bold rounded-xl border-2 text-center transition-all ${weight === w
-                                            ? "border-gray-900 bg-gray-50 text-gray-900"
-                                            : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"
+                                        ? "border-gray-900 bg-gray-50 text-gray-900"
+                                        : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"
                                         }`}
                                 >
                                     {w}
@@ -266,8 +266,8 @@ export default function BookPickupPage() {
                                         type="button"
                                         onClick={() => toggleCat(cat.id)}
                                         className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border-2 text-sm font-bold transition-all ${selected
-                                                ? "border-gray-900 bg-gray-900 text-white"
-                                                : "border-gray-200 bg-white text-gray-700 hover:border-gray-400"
+                                            ? "border-gray-900 bg-gray-900 text-white"
+                                            : "border-gray-200 bg-white text-gray-700 hover:border-gray-400"
                                             }`}
                                     >
                                         <span className="text-base">{cat.emoji}</span>
@@ -282,7 +282,7 @@ export default function BookPickupPage() {
                     {/* ── Error ── */}
                     {status === "error" && (
                         <div className="p-4 bg-red-50 border border-red-200 rounded-2xl text-red-700 text-sm text-center font-semibold">
-                        ⚠️ Something went wrong. Please call +91 91726 47718.
+                            ⚠️ Something went wrong. Please call +91 92660 57770.
                         </div>
                     )}
 
@@ -291,8 +291,8 @@ export default function BookPickupPage() {
                         type="submit"
                         disabled={!canSubmit || status === "loading"}
                         className={`w-full py-5 font-black text-base rounded-2xl transition-all flex items-center justify-center gap-3 shadow-lg ${canSubmit
-                                ? "bg-gray-900 hover:bg-gray-800 text-white hover:-translate-y-0.5"
-                                : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                            ? "bg-gray-900 hover:bg-gray-800 text-white hover:-translate-y-0.5"
+                            : "bg-gray-200 text-gray-400 cursor-not-allowed"
                             }`}
                     >
                         {status === "loading" ? (

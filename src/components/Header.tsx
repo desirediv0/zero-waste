@@ -40,7 +40,7 @@ export default function Header() {
 
                         {/* ── Logo ── */}
                         <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-                            <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-green-200 group-hover:ring-green-400 transition-all duration-200">
+                            <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-green-200 group-hover:ring-green-400 transition-all duration-200">
                                 <Image
                                     src="/logo.png"
                                     alt="ZeroWaste india Logo"
@@ -51,7 +51,7 @@ export default function Header() {
                             </div>
                             <div className="flex flex-col leading-none">
                                 <span className="text-[13px] font-black text-gray-900 tracking-tight">ZEROWASTE</span>
-                                <span className="text-[11px] font-black text-green-600 tracking-tight">ASIA</span>
+                                <span className="text-[11px] font-black text-green-600 tracking-tight">INDIA</span>
                             </div>
                         </Link>
 
@@ -177,7 +177,7 @@ export default function Header() {
                             Book Free Pickup
                         </Link>
                         <div className="text-center pb-4">
-                            <p className="text-[10px] text-gray-400 font-medium">📞 +91 91726 47718</p>
+                            <p className="text-[10px] text-gray-400 font-medium">📞 +91 92660 57770</p>
                             <p className="text-[10px] text-gray-400 font-medium mt-0.5">zerowaste1302@gmail.com</p>
                         </div>
                     </div>

@@ -199,7 +199,7 @@ export default function ContactForm() {
                     {status === "error" && (
                         <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-sm">
                             <span className="text-xl">⚠️</span>
-                            <span>Something went wrong. Please try again or call us at +91 91726 47718.</span>
+                            <span>Something went wrong. Please try again or call us at +91 92660 57770.</span>
                         </div>
                     )}
                 </form>

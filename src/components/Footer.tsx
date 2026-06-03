@@ -36,12 +36,12 @@ export default function Footer() {
                         {/* Brand column */}
                         <div className="sm:col-span-2 lg:col-span-1">
                             <Link href="/" className="flex items-center gap-2.5 mb-4 group">
-                                <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-green-800 group-hover:ring-green-600 transition-all">
+                                <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-green-800 group-hover:ring-green-600 transition-all">
                                     <Image src="/logo.png" alt="ZeroWaste india" fill className="object-cover" />
                                 </div>
                                 <div className="flex flex-col leading-none">
                                     <span className="text-[13px] font-black text-white tracking-tight">ZEROWASTE</span>
-                                    <span className="text-[11px] font-black text-green-500 tracking-tight">ASIA</span>
+                                    <span className="text-[11px] font-black text-green-500 tracking-tight">INDIA</span>
                                 </div>
                             </Link>
                             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
@@ -102,8 +102,8 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Phone</p>
-                                    <a href="tel:+919172647718" className="text-sm text-gray-400 hover:text-green-400 font-black transition-colors">
-                                        +91 91726 47718
+                                    <a href="tel:+919266057770" className="text-sm text-gray-400 hover:text-green-400 font-black transition-colors">
+                                        +91 92660 57770
                                     </a>
                                 </li>
                                 <li>

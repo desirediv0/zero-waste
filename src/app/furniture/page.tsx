@@ -158,7 +158,7 @@ function FurnitureModal({ onClose }: { onClose: () => void }) {
 
                             {status === "error" && (
                                 <div className="p-4 bg-red-50 border border-red-200 rounded-2xl text-red-700 text-sm text-center">
-                                    ⚠️ Something went wrong. Call us at +91 91726 47718.
+                                    ⚠️ Something went wrong. Call us at +91 92660 57770.
                                 </div>
                             )}
                         </form>
