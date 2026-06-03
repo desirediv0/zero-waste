@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
             New Pickup Request
           </h1>
           <p style="color:rgba(255,255,255,0.7);margin:6px 0 0;font-size:13px;">
-            ZeroWaste Asia – Booking Portal
+            ZeroWaste india – Booking Portal
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
         <!-- Footer -->
         <div style="background:#f9fafb;padding:18px 32px;text-align:center;border-top:1px solid #e5e7eb;">
           <p style="font-size:12px;color:#9ca3af;margin:0;">
-            ZeroWaste Asia · New Delhi, India · hello@zerowasteasia.com · +91 88000 00000
+            ZeroWaste india · New Delhi, India · hello@zerowasteindia.com · +91 88000 00000
           </p>
         </div>
       </div>
@@ -105,8 +105,8 @@ export async function POST(req: NextRequest) {
       : `📦 New Pickup Request – ${name} (${city})`;
 
     await transporter.sendMail({
-      from: `"ZeroWaste Asia Bookings" <${process.env.FROM_EMAIL}>`,
-      to: process.env.ADMIN_EMAIL || "hello@zerowasteasia.com",
+      from: `"ZeroWaste india Bookings" <${process.env.FROM_EMAIL}>`,
+      to: process.env.ADMIN_EMAIL || "hello@zerowasteindia.com",
       subject,
       html: emailHtml,
       replyTo: email || undefined,

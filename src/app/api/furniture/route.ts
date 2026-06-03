@@ -2,28 +2,28 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-    try {
-        const body = await req.json();
-        const { name, company, phone, email, city, type, quantity, action, message } = body;
+  try {
+    const body = await req.json();
+    const { name, company, phone, email, city, type, quantity, action, message } = body;
 
-        if (!name || !company || !phone || !email || !city || !action) {
-            return NextResponse.json({ error: "Required fields missing" }, { status: 400 });
-        }
+    if (!name || !company || !phone || !email || !city || !action) {
+      return NextResponse.json({ error: "Required fields missing" }, { status: 400 });
+    }
 
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST || "smtp-relay.brevo.com",
-            port: Number(process.env.SMTP_PORT) || 587,
-            secure: false,
-            auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASSWORD,
-            },
-        });
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp-relay.brevo.com",
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    });
 
-        const actionColor = action.includes("Sell") ? "#1a7c4f" : action.includes("Buy") ? "#0d9488" : "#7c3aed";
-        const actionIcon = action.includes("Sell") ? "♻️" : action.includes("Buy") ? "🛋️" : "🔄";
+    const actionColor = action.includes("Sell") ? "#1a7c4f" : action.includes("Buy") ? "#0d9488" : "#7c3aed";
+    const actionIcon = action.includes("Sell") ? "♻️" : action.includes("Buy") ? "🛋️" : "🔄";
 
-        const emailHtml = `
+    const emailHtml = `
       <div style="font-family:'DM Sans',Arial,sans-serif;max-width:620px;margin:0 auto;background:#f8fffe;padding:0;border-radius:16px;overflow:hidden;">
         
         <!-- Header -->
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
             New Furniture Request
           </h1>
           <p style="color:rgba(255,255,255,0.75);margin:6px 0 0;font-size:13px;">
-            ZeroWaste Asia — Office Furniture Division
+            ZeroWaste india — Office Furniture Division
           </p>
         </div>
 
@@ -48,14 +48,14 @@ export async function POST(req: NextRequest) {
         <div style="background:white;padding:24px 32px 32px;">
           <table style="width:100%;border-collapse:collapse;">
             ${[
-                ["👤 Name", name],
-                ["🏢 Company", company],
-                ["📞 Phone", phone],
-                ["📧 Email", email],
-                ["📍 City", city],
-                ["🪑 Furniture Type", type || "Not specified"],
-                ["📦 Quantity", quantity || "Not specified"],
-            ].map(([label, value]) => `
+        ["👤 Name", name],
+        ["🏢 Company", company],
+        ["📞 Phone", phone],
+        ["📧 Email", email],
+        ["📍 City", city],
+        ["🪑 Furniture Type", type || "Not specified"],
+        ["📦 Quantity", quantity || "Not specified"],
+      ].map(([label, value]) => `
               <tr>
                 <td style="padding:10px 0;border-bottom:1px solid #f0fdf4;vertical-align:top;width:40%;">
                   <span style="font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.8px;font-weight:700;">${label}</span>
@@ -79,24 +79,24 @@ export async function POST(req: NextRequest) {
         <!-- Footer -->
         <div style="background:#f9fafb;padding:18px 32px;text-align:center;border-top:1px solid #e5e7eb;">
           <p style="font-size:12px;color:#9ca3af;margin:0;">
-            ZeroWaste Asia · Furniture Division · New Delhi, India<br/>
-            hello@zerowasteasia.com · +91 88000 00000
+            ZeroWaste india · Furniture Division · New Delhi, India<br/>
+            hello@zerowasteindia.com · +91 88000 00000
           </p>
         </div>
       </div>
     `;
 
-        await transporter.sendMail({
-            from: `"ZeroWaste Asia Furniture" <${process.env.FROM_EMAIL}>`,
-            to: process.env.ADMIN_EMAIL || "hello@zerowasteasia.com",
-            subject: `🛋️ Furniture Request — ${action} · ${company} (${city})`,
-            html: emailHtml,
-            replyTo: email,
-        });
+    await transporter.sendMail({
+      from: `"ZeroWaste india Furniture" <${process.env.FROM_EMAIL}>`,
+      to: process.env.ADMIN_EMAIL || "hello@zerowasteindia.com",
+      subject: `🛋️ Furniture Request — ${action} · ${company} (${city})`,
+      html: emailHtml,
+      replyTo: email,
+    });
 
-        return NextResponse.json({ success: true });
-    } catch (error) {
-        console.error("Furniture mail error:", error);
-        return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
-    }
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error("Furniture mail error:", error);
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+  }
 }

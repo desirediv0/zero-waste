@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Terms & Conditions – ZeroWaste Asia",
-    description: "Read ZeroWaste Asia's Terms and Conditions, service agreement, pricing policy, and cancellation guidelines.",
+    title: "Terms & Conditions – ZeroWaste india",
+    description: "Read ZeroWaste india's Terms and Conditions, service agreement, pricing policy, and cancellation guidelines.",
 };
 
 const sections = [
@@ -12,7 +12,7 @@ const sections = [
         number: "01",
         title: "Acceptance of Terms",
         emoji: "📋",
-        content: `By accessing and using ZerowasteAsia ("the Platform"), you agree to be bound by these Terms and Conditions. If you do not agree to all of these terms, do not use the service.
+        content: `By accessing and using zerowasteindia ("the Platform"), you agree to be bound by these Terms and Conditions. If you do not agree to all of these terms, do not use the service.
 
 These terms apply to all users of the Platform — including households, businesses, and any commercial entities using our scrap pickup and recycling services.`,
     },
@@ -21,7 +21,7 @@ These terms apply to all users of the Platform — including households, busines
         number: "02",
         title: "Service Description",
         emoji: "♻️",
-        content: `ZerowasteAsia provides a platform connecting household and commercial users with recycling partners. We facilitate the booking, tracking, and payment processes for scrap pickup and recycling.`,
+        content: `zerowasteindia provides a platform connecting household and commercial users with recycling partners. We facilitate the booking, tracking, and payment processes for scrap pickup and recycling.`,
         lists: [
             {
                 title: "User Responsibilities",
@@ -85,7 +85,7 @@ export default function TermsPage() {
                     </h1>
 
                     <p className="text-gray-500 text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-                        Agreement for ZerowasteAsia Services. Please read these terms carefully before using our platform.
+                        Agreement for zerowasteindia Services. Please read these terms carefully before using our platform.
                     </p>
 
                     {/* Quick nav pills */}
@@ -171,7 +171,7 @@ export default function TermsPage() {
                         <div className="bg-white rounded-2xl p-5 border border-gray-100 text-center shadow-sm">
                             <div className="text-3xl mb-2">📧</div>
                             <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Legal Support</p>
-                            <p className="font-black text-gray-900 text-sm">hello@zerowasteasia.com</p>
+                            <p className="font-black text-gray-900 text-sm">hello@zerowasteindia.com</p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export default function TermsPage() {
                         Our support team is available 10AM – 7PM, Mon – Sat.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                        <a href="mailto:hello@zerowasteasia.com"
+                        <a href="mailto:hello@zerowasteindia.com"
                             className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 sm:px-7 sm:py-4 bg-white hover:bg-green-50 text-gray-900 font-black text-sm rounded-2xl transition-all shadow-xl hover:-translate-y-0.5">
                             📧 Contact Legal Support
                         </a>

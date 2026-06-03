@@ -15,7 +15,7 @@ const reviews = [
   { name: "Pooja", text: "Pickup was on time and staff behaved politely. Price was exactly as shown — no hidden charges. Smooth and convenient." },
   { name: "Preeti Verma", text: "Hassle free experience. Home pickup is very convenient and a great initiative to save the environment. Will recommend!" },
   { name: "Mridul Sah", text: "Excellent service with timely pickup and fair pricing. Staff is polite and professional. Highly recommended." },
-  { name: "Sheeba Bhatnagar", text: "Quick and easy. The team is super helpful and polite. I much prefer ZeroWaste Asia over local dealers." },
+  { name: "Sheeba Bhatnagar", text: "Quick and easy. The team is super helpful and polite. I much prefer ZeroWaste india over local dealers." },
 ];
 
 export default function HomePage() {
@@ -37,7 +37,7 @@ export default function HomePage() {
             <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-5">
               ♻️
             </div>
-            <h2 className="text-2xl font-black text-gray-900 mb-1">Welcome to ZeroWaste Asia</h2>
+            <h2 className="text-2xl font-black text-gray-900 mb-1">Welcome to ZeroWaste india</h2>
             <p className="text-gray-500 text-sm mb-7">What would you like to do today?</p>
 
             <div className="flex flex-col gap-3">
@@ -161,7 +161,7 @@ export default function HomePage() {
                 100% weighing accuracy guaranteed
               </h3>
               <p className="text-green-800 text-xs mt-1 leading-snug">
-                Powered by ZeroWaste Asia&apos;s Smart Digital Weighing Scales
+                Powered by ZeroWaste india&apos;s Smart Digital Weighing Scales
               </p>
             </div>
             <div className="text-5xl sm:text-7xl shrink-0">⚖️</div>

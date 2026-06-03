@@ -1,4 +1,4 @@
-# ♻️ ZeroWaste Asia — Building a Zero-Waste Future
+# ♻️ ZeroWaste india — Building a Zero-Waste Future
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.2.32-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -6,7 +6,7 @@
 [![Nodemailer](https://img.shields.io/badge/Nodemailer-SMTP-563D7C?style=for-the-badge&logo=mail-dot-ru&logoColor=white)](https://nodemailer.com/)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](#)
 
-> **South Asia's most trusted green recycling platform.** Schedule free doorstep pickups, get paid instantly with 100% digital weighing scale accuracy, and earn from your household scrap while carbon-offsetting our planet. ZeroWaste Asia makes the circular economy a seamless reality for both households and businesses.
+> **South Asia's most trusted green recycling platform.** Schedule free doorstep pickups, get paid instantly with 100% digital weighing scale accuracy, and earn from your household scrap while carbon-offsetting our planet. ZeroWaste india makes the circular economy a seamless reality for both households and businesses.
 
 ---
 
@@ -42,7 +42,7 @@
 
 ## 🎨 Premium Design & Aesthetics
 
-ZeroWaste Asia is styled using modern, high-end web aesthetics tailored to look extremely premium:
+ZeroWaste india is styled using modern, high-end web aesthetics tailored to look extremely premium:
 * **Color Palette**: Highly curated, harmonious forest greens (`#16a34a`, `#15803d`, `#14532d`), charcoal dark tones (`#111827`, `#0f1f0f`), and soft pastel green accents (`#f8fffe`, `#f0fdf4`) that represent ecology and premium quality.
 * **Dynamic Animations**: Smooth, hardware-accelerated floating keyframe animations (`floaty`) that bring interactive absolute-positioned elements to life.
 * **Micro-interactions**: Glassmorphism borders, card hover lift effects (`hover:-translate-y-0.5`), and responsive flex grids that render perfectly across all screen sizes (mobile viewport-safe layouts `min-h-[100svh]`).
@@ -156,7 +156,7 @@ npm start
 
 ## ⚡ API Endpoints & Mail Templates
 
-ZeroWaste Asia hosts robust route handlers under Next.js server runtime (`src/app/api/...`), generating beautifully structured transaction receipts:
+ZeroWaste india hosts robust route handlers under Next.js server runtime (`src/app/api/...`), generating beautifully structured transaction receipts:
 
 ### 1. `POST /api/contact`
 Handles household and detailed pickup requests from `/book-pickup` and homepage widgets. 
@@ -221,4 +221,4 @@ git push origin main
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE) — feel free to customize and use it for building your green initiatives! 
 
-*Built with 💚 by the ZeroWaste Asia team. Let's fix our environment, one piece of scrap at a time.*
+*Built with 💚 by the ZeroWaste india team. Let's fix our environment, one piece of scrap at a time.*

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "About Us – ZeroWaste Asia",
-    description: "Learn about ZeroWaste Asia's mission, vision, values, and the team building South Asia's most trusted recycling platform.",
+    title: "About Us – ZeroWaste india",
+    description: "Learn about ZeroWaste india's mission, vision, values, and the team building South Asia's most trusted recycling platform.",
 };
 
 const stats = [
@@ -28,7 +28,7 @@ const team = [
 ];
 
 const timeline = [
-    { year: "2026", title: "Founded in Gurgaon", desc: "ZeroWaste Asia was founded in Gurgaon with a single mission: make recycling easy, fair, and accessible to every Indian household." },
+    { year: "2026", title: "Founded in Gurgaon", desc: "ZeroWaste india was founded in Gurgaon with a single mission: make recycling easy, fair, and accessible to every Indian household." },
     { year: "2026", title: "Scaled to 03 Cities", desc: "Expanding our operations rapidly to cover three major cities in the Delhi NCR region." },
     { year: "2026", title: "1,000+ Households Reached", desc: "Reached 1,000+ households across Gurgaon, Delhi and Noida with 200+ verified collectors." },
 ];
@@ -57,7 +57,7 @@ export default function AboutPage() {
                     </h1>
 
                     <p className="text-gray-500 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-                        ZerowasteAsia started in 2022 with a simple belief: recycling should be
+                        zerowasteindia started in 2022 with a simple belief: recycling should be
                         easy, rewarding, and accessible to everyone. We&apos;re on a mission to
                         make the circular economy a reality across Asia&apos;s cities.
                     </p>
@@ -99,10 +99,10 @@ export default function AboutPage() {
                             <div className="text-4xl mb-5">🔭</div>
                             <p className="text-[10px] sm:text-xs font-bold text-green-200 uppercase tracking-widest mb-3">Our Vision</p>
                             <h2 className="text-2xl sm:text-3xl font-black mb-4 leading-tight">
-                                Zero Waste to Landfill — Across Asia
+                                zero waste india to Landfill — Across Asia
                             </h2>
                             <p className="text-green-100 text-sm sm:text-base leading-relaxed">
-                                A future where zero waste goes to landfill — where every household participates
+                                A future wherezero waste india goes to landfill — where every household participates
                                 in a circular economy, every collector is digitally empowered, and Asia leads
                                 the world in sustainable urban living.
                             </p>

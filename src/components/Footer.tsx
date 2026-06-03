@@ -37,7 +37,7 @@ export default function Footer() {
                         <div className="sm:col-span-2 lg:col-span-1">
                             <Link href="/" className="flex items-center gap-2.5 mb-4 group">
                                 <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-green-800 group-hover:ring-green-600 transition-all">
-                                    <Image src="/logo.png" alt="ZeroWaste Asia" fill className="object-cover" />
+                                    <Image src="/logo.png" alt="ZeroWaste india" fill className="object-cover" />
                                 </div>
                                 <div className="flex flex-col leading-none">
                                     <span className="text-[13px] font-black text-white tracking-tight">ZEROWASTE</span>
@@ -108,9 +108,9 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Email</p>
-                                    <a href="mailto:hello@zerowasteasia.com"
+                                    <a href="mailto:hello@zerowasteindia.com"
                                         className="text-sm text-gray-400 hover:text-green-400 font-medium transition-colors break-all">
-                                        hello@zerowasteasia.com
+                                        hello@zerowasteindia.com
                                     </a>
                                 </li>
                             </ul>
@@ -120,7 +120,7 @@ export default function Footer() {
                     {/* ── Bottom bar ── */}
                     <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3">
                         <p className="text-xs text-gray-600 font-medium text-center sm:text-left">
-                            © 2026 ZerowasteAsia · All rights reserved
+                            © 2026 zerowasteindia · All rights reserved
                         </p>
                         <div className="flex items-center gap-1 text-xs text-gray-600">
                             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />

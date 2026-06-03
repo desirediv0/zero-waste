@@ -31,8 +31,8 @@ export default function Header() {
         <>
             <header
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                        ? "bg-white/95 backdrop-blur-md shadow-[0_1px_20px_rgba(0,0,0,0.06)] border-b border-gray-100"
-                        : "bg-white/80 backdrop-blur-sm"
+                    ? "bg-white/95 backdrop-blur-md shadow-[0_1px_20px_rgba(0,0,0,0.06)] border-b border-gray-100"
+                    : "bg-white/80 backdrop-blur-sm"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +43,7 @@ export default function Header() {
                             <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-green-200 group-hover:ring-green-400 transition-all duration-200">
                                 <Image
                                     src="/logo.png"
-                                    alt="ZeroWaste Asia Logo"
+                                    alt="ZeroWaste india Logo"
                                     fill
                                     className="object-cover"
                                     priority
@@ -64,8 +64,8 @@ export default function Header() {
                                         key={link.href}
                                         href={link.href}
                                         className={`relative px-4 py-2 text-sm font-bold rounded-xl transition-all duration-150 ${isActive
-                                                ? "text-green-700 bg-green-50"
-                                                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                                            ? "text-green-700 bg-green-50"
+                                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                                             }`}
                                     >
                                         {link.label}
@@ -124,7 +124,7 @@ export default function Header() {
                     <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
                         <div className="flex items-center gap-2.5">
                             <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-green-200">
-                                <Image src="/logo.png" alt="ZeroWaste Asia" fill className="object-cover" />
+                                <Image src="/logo.png" alt="ZeroWaste india" fill className="object-cover" />
                             </div>
                             <div className="flex flex-col leading-none">
                                 <span className="text-[12px] font-black text-gray-900">ZEROWASTE</span>
@@ -149,8 +149,8 @@ export default function Header() {
                                     key={link.href}
                                     href={link.href}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-2xl font-bold text-sm transition-all ${isActive
-                                            ? "bg-green-50 text-green-700"
-                                            : "text-gray-700 hover:bg-gray-50"
+                                        ? "bg-green-50 text-green-700"
+                                        : "text-gray-700 hover:bg-gray-50"
                                         }`}
                                 >
                                     <span className="text-base">
@@ -178,7 +178,7 @@ export default function Header() {
                         </Link>
                         <div className="text-center pb-4">
                             <p className="text-[10px] text-gray-400 font-medium">📞 +91 88000 00000</p>
-                            <p className="text-[10px] text-gray-400 font-medium mt-0.5">hello@zerowasteasia.com</p>
+                            <p className="text-[10px] text-gray-400 font-medium mt-0.5">hello@zerowasteindia.com</p>
                         </div>
                     </div>
                 </div>
