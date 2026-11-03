@@ -78,6 +78,7 @@ export default function Header() {
                         </nav>
 
                         {/* ── Desktop CTA ── */}
+
                         <div className="hidden md:flex items-center gap-3">
                             <Link
                                 href="/scrap-rates"
@@ -85,6 +86,7 @@ export default function Header() {
                             >
                                 View Rates
                             </Link>
+
                             <Link
                                 href="/book-pickup"
                                 className="flex items-center gap-2 px-5 py-2.5 bg-gray-900 hover:bg-gray-800 text-white font-black text-sm rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
@@ -92,7 +94,17 @@ export default function Header() {
                                 <span className="text-base">📦</span>
                                 Book Pickup
                             </Link>
+
+                            <Link
+                                href="/furniture"
+                                className="flex items-center gap-2 px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white font-black text-sm rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                            >
+                                <span className="text-base">🛋️</span>
+                                Refurbished Furniture
+                                <span className="text-sm">→</span>
+                            </Link>
                         </div>
+
 
                         {/* ── Mobile Hamburger ── */}
                         <button
