@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 const stats = [
   { value: "5,000+", label: "Happy Households", emoji: "🏠" },
@@ -19,21 +19,15 @@ const reviews = [
 ];
 
 export default function HomePage() {
-  const [showDialog, setShowDialog] = useState(false);
-
-  useEffect(() => {
-    setShowDialog(true);
-  }, []);
-
   return (
     <div className="bg-white overflow-x-hidden">
 
       {/* ══════════ WELCOME DIALOG ══════════ */}
-      {showDialog && (
+      {/* {showDialog && (
         <div className="fixed inset-0 z-[999] flex items-center justify-center px-4"
           style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(6px)" }}>
           <div className="bg-white rounded-3xl shadow-2xl w-full max-w-sm p-8 text-center relative">
-            {/* Logo / icon */}
+            Logo / icon
             <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-5">
               ♻️
             </div>
@@ -41,7 +35,7 @@ export default function HomePage() {
             <p className="text-gray-500 text-sm mb-7">What would you like to do today?</p>
 
             <div className="flex flex-col gap-3">
-              {/* Buy */}
+              Buy
               <Link
                 href="/furniture"
                 onClick={() => setShowDialog(false)}
@@ -55,7 +49,7 @@ export default function HomePage() {
                 <span className="ml-auto text-gray-500 group-hover:translate-x-1 transition-transform">→</span>
               </Link>
 
-              {/* Sell */}
+              Sell
               <button
                 onClick={() => setShowDialog(false)}
                 className="flex items-center gap-4 px-5 py-4 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-all group"
@@ -70,7 +64,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* ══════════ HERO ══════════ */}
       <section className="relative min-h-[100svh] flex flex-col items-center justify-center pt-20 pb-10 overflow-hidden px-4">
@@ -114,7 +108,10 @@ export default function HomePage() {
           </p>
 
           {/* ── BIG CTA BUTTONS ── */}
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full">
+
+            {/* Schedule Free Pickup */}
             <Link
               href="/book-pickup"
               className="group w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-5 sm:px-10 sm:py-6 bg-gray-900 hover:bg-gray-800 text-white font-black text-base sm:text-lg rounded-2xl transition-all shadow-2xl hover:shadow-gray-300 hover:-translate-y-1 active:scale-95"
@@ -123,6 +120,8 @@ export default function HomePage() {
               Schedule Free Pickup
               <span className="group-hover:translate-x-1.5 transition-transform text-lg">→</span>
             </Link>
+
+            {/* View Scrap Rates */}
             <Link
               href="/scrap-rates"
               className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-5 sm:px-10 sm:py-6 bg-white hover:bg-green-50 text-gray-900 font-bold text-base sm:text-lg rounded-2xl transition-all border-2 border-gray-200 hover:border-green-500 hover:-translate-y-1 active:scale-95"
@@ -131,6 +130,7 @@ export default function HomePage() {
               View Scrap Rates
             </Link>
           </div>
+
 
           {/* Rating */}
           <div className="flex items-center justify-center gap-2 mt-6">
