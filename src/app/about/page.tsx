@@ -253,7 +253,7 @@ export default function AboutPage() {
                         </div>
                     </div>
 
-                    {/* CTA Buttons */}
+                    
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
