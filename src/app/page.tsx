@@ -239,7 +239,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════ HOUSEHOLDS & BUSINESSES ══════════ */}
-      <section className="py-14 sm:py-16 bg-white border-t border-gray-100">
+      {/* <section className="py-14 sm:py-16 bg-white border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-green-700 leading-snug px-2">
@@ -281,7 +281,152 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section> */}
+
+      {/* ══════════ HOUSEHOLDS & BUSINESSES ══════════ */}
+
+      <section className="relative overflow-hidden bg-gradient-to-b from-white to-green-50/60 py-16 sm:py-20 border-t border-green-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+
+          {/* Section Heading */}
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <span className="inline-block bg-green-100 text-green-700 text-xs font-bold uppercase tracking-[0.2em] px-4 py-2 rounded-full mb-5">
+              Our Services
+            </span>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+              Waste Management Solutions
+              <span className="block text-green-700 mt-2">
+                For Every Need
+              </span>
+            </h2>
+
+            <p className="text-gray-600 text-sm sm:text-base mt-5 leading-relaxed">
+              From household scrap collection to large-scale corporate
+              waste management, we deliver responsible and efficient solutions.
+            </p>
+          </div>
+
+          {/* Service Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {/* Household Scrap Collection */}
+            <div className="group bg-white rounded-3xl p-7 sm:p-8 border border-green-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl mb-6 group-hover:bg-green-600 transition-colors duration-300">
+                🏠
+              </div>
+
+              <p className="text-xs font-bold text-green-600 uppercase tracking-widest mb-3">
+                For Homes
+              </p>
+
+              <h3 className="text-xl sm:text-2xl font-black text-gray-900 mb-6">
+                Household Scrap Collection
+              </h3>
+
+              <ul className="space-y-4">
+                {[
+                  "Doorstep scrap pickup",
+                  "Online scrap booking",
+                  "Transparent scrap rates",
+                  "Instant payment",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                    <span className="w-6 h-6 rounded-full bg-green-100 text-green-700 flex items-center justify-center text-xs font-bold shrink-0">
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Corporate Waste Management */}
+            <div className="group bg-white rounded-3xl p-7 sm:p-8 border border-green-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-teal-100 flex items-center justify-center text-3xl mb-6 group-hover:bg-teal-600 transition-colors duration-300">
+                🏢
+              </div>
+
+              <p className="text-xs font-bold text-teal-600 uppercase tracking-widest mb-3">
+                For Businesses
+              </p>
+
+              <h3 className="text-xl sm:text-2xl font-black text-gray-900 mb-6">
+                Corporate Waste Management
+              </h3>
+
+              <ul className="space-y-4">
+                {[
+                  "Office scrap disposal",
+                  "Asset buyback",
+                  "E-waste management",
+                  "Bulk scrap collection",
+                  "Compliance documentation",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                    <span className="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs font-bold shrink-0">
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Enterprise Projects */}
+            <div className="group bg-white rounded-3xl p-7 sm:p-8 border border-green-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 md:col-span-2 lg:col-span-1">
+              <div className="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center text-3xl mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                🏗️
+              </div>
+
+              <p className="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-3">
+                Large-Scale Solutions
+              </p>
+
+              <h3 className="text-xl sm:text-2xl font-black text-gray-900 mb-6">
+                Enterprise Projects
+              </h3>
+
+              <ul className="space-y-4">
+                {[
+                  "Office dismantling",
+                  "Bare shell and reinstatement",
+                  "Furniture buyback",
+                  "IT asset disposal",
+                  "Project-based waste management",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                    <span className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0">
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 text-sm sm:text-base mb-5">
+              Looking for a reliable waste management partner?
+            </p>
+
+            <a
+              href="https://wa.me/919266057770"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-green-600/20 transition-all duration-300 hover:-translate-y-1"
+            >
+              Contact Our Team
+              <span>→</span>
+            </a>
+          </div>
+
+        </div>
       </section>
+
 
       {/* ══════════ BIG CTA BANNER (replaces form) ══════════ */}
       <section className="py-14 sm:py-16 bg-gray-50 border-t border-gray-100">
@@ -339,7 +484,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════ REVIEWS ══════════ */}
-      <section className="py-14 sm:py-16 bg-green-800">
+      {/* <section className="py-14 sm:py-16 bg-green-800">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-2">
@@ -357,7 +502,222 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section> */}
+
+
+
+      <section className="relative py-20 sm:py-24 bg-[#0b0f0d] border-t border-green-900/30 overflow-hidden">
+
+        {/* Background decoration */}
+        <div className="absolute top-0 left-0 w-80 h-80 bg-green-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="relative max-w-6xl mx-auto px-4">
+
+          {/* Heading */}
+          <div className="text-center mb-14 sm:mb-16">
+            <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-green-400 bg-green-500/10 border border-green-500/20 px-5 py-2 rounded-full mb-5">
+              Customer Testimonials
+            </span>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+              Trusted by Customers.
+              <span className="block text-green-400 mt-2">
+                Driven by Sustainability.
+              </span>
+            </h2>
+
+            <p className="text-gray-400 text-sm sm:text-base mt-5 max-w-2xl mx-auto leading-relaxed">
+              Hear from households and businesses who have experienced
+              our waste management and recycling services.
+            </p>
+          </div>
+
+          {/* Household Reviews */}
+          <div className="mb-14">
+
+            <div className="flex items-center gap-3 mb-7">
+              <div className="w-11 h-11 rounded-xl bg-green-500/15 flex items-center justify-center text-2xl">
+                🏠
+              </div>
+
+              <div>
+                <h3 className="text-xl sm:text-2xl font-black text-white">
+                  Household Customer Reviews
+                </h3>
+                <p className="text-gray-500 text-xs sm:text-sm mt-1">
+                  Experiences from our household customers
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+              {/* Review 1 */}
+              <div className="bg-[#151c17] border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-green-500/40 hover:-translate-y-1 transition-all duration-300">
+                <div className="text-green-400 text-lg tracking-widest mb-5">
+                  ★★★★★
+                </div>
+
+                <p className="text-gray-300 text-sm sm:text-base leading-8 mb-7">
+                  "I had a great experience with Zero Waste India.
+                  The scrap pickup process was very simple, the team
+                  arrived on time, and the payment was transparent.
+                  Highly recommended!"
+                </p>
+
+                <div className="flex items-center gap-3 border-t border-white/10 pt-5">
+                  <div className="w-11 h-11 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-black">
+                    SP
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-bold">
+                      Shivam Pathak
+                    </p>
+                    <p className="text-gray-500 text-xs mt-1">
+                      Household Customer
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 2 */}
+              <div className="bg-[#151c17] border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-green-500/40 hover:-translate-y-1 transition-all duration-300">
+                <div className="text-green-400 text-lg tracking-widest mb-5">
+                  ★★★★★
+                </div>
+
+                <p className="text-gray-300 text-sm sm:text-base leading-8 mb-7">
+                  "Very convenient service for disposing of old
+                  newspapers, cardboard, plastic and metal scrap.
+                  The staff was polite and the entire process
+                  was hassle-free."
+                </p>
+
+                <div className="flex items-center gap-3 border-t border-white/10 pt-5">
+                  <div className="w-11 h-11 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-black">
+                    PS
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-bold">
+                      Pooja Singh
+                    </p>
+                    <p className="text-gray-500 text-xs mt-1">
+                      Household Customer
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Corporate Reviews */}
+          <div>
+
+            <div className="flex items-center gap-3 mb-7">
+              <div className="w-11 h-11 rounded-xl bg-green-500/15 flex items-center justify-center text-2xl">
+                🏢
+              </div>
+
+              <div>
+                <h3 className="text-xl sm:text-2xl font-black text-white">
+                  Corporate Customer Reviews
+                </h3>
+                <p className="text-gray-500 text-xs sm:text-sm mt-1">
+                  Feedback from our business partners
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+              {/* Review 1 */}
+              <div className="bg-[#151c17] border border-white/10 rounded-2xl p-6 hover:border-green-500/40 hover:-translate-y-1 transition-all duration-300">
+                <div className="text-green-400 text-lg tracking-widest mb-5">
+                  ★★★★★
+                </div>
+
+                <p className="text-gray-300 text-sm leading-7 mb-7">
+                  "Zero Waste India provided an organized and
+                  professional solution for our bulk scrap disposal
+                  requirements. Their team handled the process
+                  efficiently and maintained transparency throughout."
+                </p>
+
+                <div className="border-t border-white/10 pt-5">
+                  <p className="text-white font-bold text-sm">
+                    Arunesh Katihar
+                  </p>
+                  <p className="text-green-400 text-xs font-semibold mt-1">
+                    RMZ Group
+                  </p>
+                </div>
+              </div>
+
+              {/* Review 2 */}
+              <div className="bg-[#151c17] border border-white/10 rounded-2xl p-6 hover:border-green-500/40 hover:-translate-y-1 transition-all duration-300">
+                <div className="text-green-400 text-lg tracking-widest mb-5">
+                  ★★★★★
+                </div>
+
+                <p className="text-gray-300 text-sm leading-7 mb-7">
+                  "We appreciate their systematic approach to asset
+                  buyback and waste management. Their coordination,
+                  documentation and execution were impressive."
+                </p>
+
+                <div className="border-t border-white/10 pt-5">
+                  <p className="text-white font-bold text-sm">
+                    Avinash
+                  </p>
+                  <p className="text-green-400 text-xs font-semibold mt-1">
+                    Akasa Coworking
+                  </p>
+                </div>
+              </div>
+
+              {/* Review 3 */}
+              <div className="bg-[#151c17] border border-white/10 rounded-2xl p-6 hover:border-green-500/40 hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-1">
+                <div className="text-green-400 text-lg tracking-widest mb-5">
+                  ★★★★★
+                </div>
+
+                <p className="text-gray-300 text-sm leading-7 mb-7">
+                  "A very smooth experience with Zero Waste India.
+                  They provided a transparent valuation for our old
+                  office furniture, electrical equipment and other
+                  assets. The team was cooperative and completed the
+                  work within the agreed timeline."
+                </p>
+
+                <div className="border-t border-white/10 pt-5">
+                  <p className="text-white font-bold text-sm">
+                    Rajbir Singh
+                  </p>
+                  <p className="text-green-400 text-xs font-semibold mt-1">
+                    Smartworks Coworking Spaces Limited
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Bottom Tagline */}
+          <div className="text-center mt-14">
+            <p className="text-gray-500 text-xs sm:text-sm font-semibold tracking-widest">
+              TRUST BUILT THROUGH TRANSPARENCY
+              <span className="text-green-500"> · </span>
+              SERVICE
+              <span className="text-green-500"> · </span>
+              SUSTAINABILITY
+            </p>
+          </div>
+
+        </div>
       </section>
+
 
       {/* ══════════ FINAL CTA ══════════ */}
       <section className="relative py-14 sm:py-16 text-center overflow-hidden"
