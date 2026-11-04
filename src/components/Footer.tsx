@@ -132,7 +132,7 @@ export default function Footer() {
                             <ul className="space-y-4">
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Address</p>
-                                    <p className="text-sm text-gray-500 font-medium leading-snug">New Delhi, India</p>
+                                    <p className="text-sm text-gray-500 font-medium leading-snug">Gurugram, India</p>
                                 </li>
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Support Hours</p>
@@ -146,9 +146,11 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">Email</p>
-                                    <a href="mailto:zerowaste1302@gmail.com"
-                                        className="text-sm text-gray-400 hover:text-green-400 font-medium transition-colors break-all">
-                                        zerowaste1302@gmail.com
+                                    <a
+                                        href="mailto:Hello@zerowaste-india.com"
+                                        className="text-sm text-gray-400 hover:text-green-400 font-medium transition-colors break-all"
+                                    >
+                                        Hello@zerowaste-india.com
                                     </a>
                                 </li>
                             </ul>
