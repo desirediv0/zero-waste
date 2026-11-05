@@ -667,7 +667,7 @@ export default function AboutPage() {
                     {/* Team Grid */}
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 
-                        {team.map((t, i) => (
+                        {team.map((t) => (
                             <div
                                 key={t.name}
                                 className="group relative bg-[#111713] rounded-2xl border border-white/10 overflow-hidden hover:border-green-500/50 transition-all duration-300"

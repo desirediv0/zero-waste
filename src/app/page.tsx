@@ -11,12 +11,12 @@ const stats = [
 ];
 
 
-const reviews = [
-  { name: "Pooja", text: "Pickup was on time and staff behaved politely. Price was exactly as shown — no hidden charges. Smooth and convenient." },
-  { name: "Preeti Verma", text: "Hassle free experience. Home pickup is very convenient and a great initiative to save the environment. Will recommend!" },
-  { name: "Mridul Sah", text: "Excellent service with timely pickup and fair pricing. Staff is polite and professional. Highly recommended." },
-  { name: "Sheeba Bhatnagar", text: "Quick and easy. The team is super helpful and polite. I much prefer ZeroWaste india over local dealers." },
-];
+// const reviews = [
+//   { name: "Pooja", text: "Pickup was on time and staff behaved politely. Price was exactly as shown — no hidden charges. Smooth and convenient." },
+//   { name: "Preeti Verma", text: "Hassle free experience. Home pickup is very convenient and a great initiative to save the environment. Will recommend!" },
+//   { name: "Mridul Sah", text: "Excellent service with timely pickup and fair pricing. Staff is polite and professional. Highly recommended." },
+//   { name: "Sheeba Bhatnagar", text: "Quick and easy. The team is super helpful and polite. I much prefer ZeroWaste india over local dealers." },
+// ];
 
 export default function HomePage() {
   return (
@@ -560,10 +560,10 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-gray-300 text-sm sm:text-base leading-8 mb-7">
-                  "I had a great experience with Zero Waste India.
+                  &quot;I had a great experience with Zero Waste India.
                   The scrap pickup process was very simple, the team
                   arrived on time, and the payment was transparent.
-                  Highly recommended!"
+                  Highly recommended!&quot;
                 </p>
 
                 <div className="flex items-center gap-3 border-t border-white/10 pt-5">
@@ -588,10 +588,10 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-gray-300 text-sm sm:text-base leading-8 mb-7">
-                  "Very convenient service for disposing of old
+                  &quot;Very convenient service for disposing of old
                   newspapers, cardboard, plastic and metal scrap.
                   The staff was polite and the entire process
-                  was hassle-free."
+                  was hassle-free.&quot;
                 </p>
 
                 <div className="flex items-center gap-3 border-t border-white/10 pt-5">
@@ -639,10 +639,10 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-gray-300 text-sm leading-7 mb-7">
-                  "Zero Waste India provided an organized and
+                  &quot;Zero Waste India provided an organized and
                   professional solution for our bulk scrap disposal
                   requirements. Their team handled the process
-                  efficiently and maintained transparency throughout."
+                  efficiently and maintained transparency throughout.&quot;
                 </p>
 
                 <div className="border-t border-white/10 pt-5">
@@ -662,9 +662,9 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-gray-300 text-sm leading-7 mb-7">
-                  "We appreciate their systematic approach to asset
+                  &quot;We appreciate their systematic approach to asset
                   buyback and waste management. Their coordination,
-                  documentation and execution were impressive."
+                  documentation and execution were impressive.&quot;
                 </p>
 
                 <div className="border-t border-white/10 pt-5">
@@ -684,11 +684,11 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-gray-300 text-sm leading-7 mb-7">
-                  "A very smooth experience with Zero Waste India.
+                  &quot;A very smooth experience with Zero Waste India.
                   They provided a transparent valuation for our old
                   office furniture, electrical equipment and other
                   assets. The team was cooperative and completed the
-                  work within the agreed timeline."
+                  work within the agreed timeline.&quot;
                 </p>
 
                 <div className="border-t border-white/10 pt-5">

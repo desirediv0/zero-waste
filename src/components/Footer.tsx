@@ -17,12 +17,12 @@ const scrapCategories = [
     { label: "Small Appliances", href: "/scrap-rates" },
 ];
 
-const socialLinks = [
-    { label: "Instagram", emoji: "📸", href: "#" },
-    { label: "LinkedIn", emoji: "💼", href: "#" },
-    { label: "YouTube", emoji: "▶️", href: "#" },
-    { label: "WhatsApp", emoji: "💬", href: "#" },
-];
+// const socialLinks = [
+//     { label: "Instagram", emoji: "📸", href: "#" },
+//     { label: "LinkedIn", emoji: "💼", href: "#" },
+//     { label: "YouTube", emoji: "▶️", href: "#" },
+//     { label: "WhatsApp", emoji: "💬", href: "#" },
+// ];
 
 export default function Footer() {
     return (
