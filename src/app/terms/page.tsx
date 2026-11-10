@@ -166,12 +166,12 @@ export default function TermsPage() {
                         <div className="bg-white rounded-2xl p-5 border border-gray-100 text-center shadow-sm">
                             <div className="text-3xl mb-2">⚖️</div>
                             <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Governing Law</p>
-                            <p className="font-black text-gray-900 text-sm">India · Delhi Courts</p>
+                            <p className="font-black text-gray-900 text-sm">India · Gurugram</p>
                         </div>
                         <div className="bg-white rounded-2xl p-5 border border-gray-100 text-center shadow-sm">
                             <div className="text-3xl mb-2">📧</div>
                             <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Legal Support</p>
-                            <p className="font-black text-gray-900 text-sm">zerowaste1302@gmail.com</p>
+                            <p className="font-black text-gray-900 text-sm">Hello@zerowaste-india.com</p>
                         </div>
                     </div>
                 </div>
